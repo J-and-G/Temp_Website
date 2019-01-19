@@ -20,6 +20,7 @@
    <link rel="stylesheet" href="stylesheets/main.css">  
    <link rel="stylesheet" href="stylesheets/base.css">
    <link rel="stylesheet" href="stylesheets/vendor.css">
+   <link rel="stylesheet" href="/stylesheets/loading.css">
 
    <!-- script
    ================================================== -->
@@ -32,6 +33,15 @@
 </head>
 
 <body id="top">
+
+	<!-- initial loader -->
+	<div class="loading-page">
+		<div class="counter">
+			<p>loading</p>
+			<h1>0%</h1>
+			<hr/>
+		</div>
+	</div>
 
 	<!-- header 
    ================================================== -->
@@ -433,9 +443,9 @@
 
    </footer>
 
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
+  
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script  src="javascripts/loading.js"></script>
 
    <!-- Java Script
    ================================================== --> 
