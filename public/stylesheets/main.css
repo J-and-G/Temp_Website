@@ -36,7 +36,10 @@
  * 02. base style overrides - (_document-setup)
  *
  * ------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 html {
+	
 	font-size: 10px;
 }
 @media only screen and (max-width:1024px) {
@@ -1049,6 +1052,29 @@ header .social-links ul li a:focus {
 }
 .main-content-tablecell #counter .half {
 	float: left;
+}
+
+.half{
+	font-size: 60px;
+	margin-bottom: 20px;
+	color: #FFFFFF;
+	font-weight: 800;
+	opacity: 0.7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#bottom-text h1{
+	font-size: 50px;
+	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: #f60d54 !important
+}
+
+#bottom-text p{
+	font-size: 30px;
+	font-family:'Montserrat', sans-serif;
+	color: #FFFFFF;
+	opacity: 0.7;
 }
 .main-content-tablecell #counter span {
 	float: left;
