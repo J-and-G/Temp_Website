@@ -971,6 +971,7 @@ header .social-links ul li a:focus {
 	min-height: 800px;
 	z-index: 600;
 	position: relative;
+	/* display: none; */
 }
 #home .shadow-overlay {
 	position: absolute;
@@ -983,6 +984,7 @@ header .social-links ul li a:focus {
 	background: -webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, black 0%, black 20%, transparent 100%);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);  /* IE6-9 */
+	display:block;
 }
 #home .row {
 	max-width: 1290px;

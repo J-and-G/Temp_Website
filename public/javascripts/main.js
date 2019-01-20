@@ -22,12 +22,14 @@
 //       }); 
 //   	})
 	var counter = 0;
-    var c = 0;
+	var c = 0;
+	$(".loading-page .counter hr").css("visibility", "hidden");
     var perfData = window.performance.timing // The PerformanceTiming interface
     var estimatedTime = -(perfData.loadEventEnd - perfData.navigationStart) // Calculated Estimated Time of Page Load which returns negative value.
     var time = parseInt((estimatedTime/1000)%60)*100; //Converting EstimatedTime from miliseconds to seconds.
     var i = setInterval(function(){
-        $(".loading-page .counter h1").html(counter + "%");
+		$(".loading-page .counter h1").html(counter + "%");
+		$(".loading-page .counter hr").css("visibility", "visible");
         $(".loading-page .counter hr").css("width", counter+ "%");
         //$(".loading-page .counter").css("background", "linear-gradient(to right, #f60d54 "+ c + "%,#0d0d0d "+ c + "%)");
   
@@ -35,35 +37,18 @@
       $(".loading-page .counter h1.color").css("width", c + "%");
       */
       counter++;
-      if(counter == 101) {
-		  counter=100;
+      if(counter === 101) {
+		  counter=0;
 		  clearInterval(i);
-		  $('.loading-page').fadeOut(1500, ()=>{
-			$("#home").delay(300).fadeIn("slow");
+		  $('.loading-page').fadeOut("slow",()=>{
+			//$("#home").delay("slow").fadeIn("slow");
+			$("#home").css('display','block').hide().fadeIn("slow");
 		  })
+		 
       }
     }, estimatedTime/100);
 
-	var counter = 0;
-	var c = 0;
-    var perfData = window.performance.timing // The PerformanceTiming interface
-    var estimatedTime = -(perfData.loadEventEnd - perfData.navigationStart) // Calculated Estimated Time of Page Load which returns negative value.
-    var time = parseInt((estimatedTime/1000)%60)*100; //Converting EstimatedTime from miliseconds to seconds.
-    var i = setInterval(function(){
-        $(".loading-page .counter h1").html(c + "%");
-        $(".loading-page .counter hr").css("width", c + "%");
-        //$(".loading-page .counter").css("background", "linear-gradient(to right, #f60d54 "+ c + "%,#0d0d0d "+ c + "%)");
-  
-      /*
-      $(".loading-page .counter h1.color").css("width", c + "%");
-      */
-      counter++;
-      c++;
-        
-      if(counter == 101) {
-          clearInterval(i);
-      }
-    }, estimatedTime/100);
+
 
 
   	/*---------------------------------------------------- */
