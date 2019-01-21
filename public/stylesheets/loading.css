@@ -1,16 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-h1, p, h2, h3, h4, ul, li, div {
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: Roboto;
+  font-family: Montserrat;
 }
 
 .loading-page {
@@ -27,17 +28,18 @@ body {
 .loading-page .counter p {
   font-size: 40px;
   font-weight: 100;
+  margin-bottom: 10px;
   color: #f60d54;
 }
 .loading-page .counter h1 {
   color: white;
-  font-size: 60px;
-  margin-top: -10px;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 .loading-page .counter hr {
   background: #f60d54;
   border: none;
-  height: 1px;
+  height: 2px;
 }
 .loading-page .counter {
   position: relative;
