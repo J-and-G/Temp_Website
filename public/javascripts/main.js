@@ -23,10 +23,9 @@
 //   	})
 	var counter = 0;
 	var c = 0;
-	$(".loading-page .counter hr").css("visibility", "hidden");
     var perfData = window.performance.timing // The PerformanceTiming interface
     var estimatedTime = -(perfData.loadEventEnd - perfData.navigationStart) // Calculated Estimated Time of Page Load which returns negative value.
-    var time = parseInt((estimatedTime/1000)%60)*100; //Converting EstimatedTime from miliseconds to seconds.
+	var time = parseInt((estimatedTime/1000)%60)*100; //Converting EstimatedTime from miliseconds to seconds.
     var i = setInterval(function(){
 		$(".loading-page .counter h1").html(counter + "%");
 		$(".loading-page .counter hr").css("visibility", "visible");
@@ -41,8 +40,7 @@
 		  counter=0;
 		  clearInterval(i);
 		  $('.loading-page').fadeOut("slow",()=>{
-			//$("#home").delay("slow").fadeIn("slow");
-			$("#home").css('display','block').hide().fadeIn("slow");
+			$("#home").css('display','block').hide().fadeIn(3000);
 		  })
 		 
       }
