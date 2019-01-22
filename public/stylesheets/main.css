@@ -135,6 +135,14 @@ header .logo a {
 	transition: all 0.5s ease-in-out;
 }
 
+
+.logo{
+	width: 150px;
+	height: 173px;
+	background: url("../images/logo.png") no-repeat center;
+	background-size: cover;
+
+}
 /* ------------------------------------------------------------------- 
  * header social - (_layout.css)  
  * ------------------------------------------------------------------- */
@@ -149,10 +157,9 @@ header .logo a {
 		left: 24px;
 		margin-top: 42px;
 	}
-	header .logo a {
+	header .logo {
 		width: 90px;
-		height: 78px;
-		background-size: 90px 78px;
+		height: 103px;
 	}
 	header .social-links {
 		right: 18px;
@@ -164,10 +171,9 @@ header .logo a {
 		left: 51px;
 		margin-top: 36px;
 	}
-	header .logo a {
+	header .logo{
 		width: 80px;
-		height: 70px;
-		background-size: 80px 70px;
+		height: 93px;
 	}
 	header .social-links {
 		right: 45px;
@@ -179,10 +185,9 @@ header .logo a {
 		left: 41px;
 		margin-top: 30px;
 	}
-	header .logo a {
+	header .logo{
 		width: 70px;
-		height: 61px;
-		background-size: 70px 61px;
+		height: 80px;
 	}
 	header .social-links {
 		right: 41px;
@@ -211,10 +216,9 @@ header .logo a {
 		left: 30px;
 		margin-top: 30px;
 	}
-	header .logo a {
+	header .logo {
 		width: 60px;
-		height: 52px;
-		background-size: 60px 52px;
+		height: 70px;
 	}
 	header .social-links ul {
 		font-size: 2rem;
