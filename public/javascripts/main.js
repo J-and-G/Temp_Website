@@ -41,6 +41,7 @@
 		  clearInterval(i);
 		  $('.loading-page').fadeOut("slow",()=>{
 			$("#home").css('display','block').hide().fadeIn(3000);
+			$("#logo").removeClass('visibility-hidden');
 		  })
 		 
       }
