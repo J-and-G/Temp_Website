@@ -21,7 +21,7 @@
 
 //       }); 
 //   	})
-	var counter = 101;
+	var counter = 0;
 	var c = 0;
     var perfData = window.performance.timing // The PerformanceTiming interface
     var estimatedTime = -(perfData.loadEventEnd - perfData.navigationStart) // Calculated Estimated Time of Page Load which returns negative value.
