@@ -21,7 +21,7 @@
 
 //       }); 
 //   	})
-	var counter = 0;
+	var counter = 101;
 	var c = 0;
     var perfData = window.performance.timing // The PerformanceTiming interface
     var estimatedTime = -(perfData.loadEventEnd - perfData.navigationStart) // Calculated Estimated Time of Page Load which returns negative value.
@@ -36,12 +36,12 @@
       $(".loading-page .counter h1.color").css("width", c + "%");
       */
       counter++;
-      if(counter === 101) {
+      if(counter > 100) {
 		  counter=0;
 		  clearInterval(i);
 		  $('.loading-page').fadeOut("slow",()=>{
 			$("#home").css('display','block').hide().fadeIn(3000);
-			$("#logo").removeClass('visibility-hidden');
+			// $("#logo").removeClass('visibility-hidden');
 		  })
 		 
       }
