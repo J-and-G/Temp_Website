@@ -1,18 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Montserrat;
-}
 
 .loading-page {
   background: #0d0d0d;
@@ -54,4 +42,41 @@ body {
   width: 0px;
   overflow: hidden;
   color: #f60d54;
+}
+
+@media only screen and (max-width:1024px) {
+	header .logo {
+		margin: 38px;
+		width: 70px;
+		height: 80px;
+	}
+}
+@media only screen and (max-width:768px) {
+	header .logo {
+		margin: 30px;
+		width: 70px;
+		height: 80px;
+	}
+}
+@media only screen and (max-width:600px) {
+	header .logo {
+		margin: 28px;
+		width: 65px;
+		height: 75px;
+	}
+}
+@media only screen and (max-width:500px) {
+	header .logo {
+		margin: 28px;
+		width: 55px;
+		height: 64px;
+	}
+}
+@media only screen and (max-width:380px) {
+	header .logo {
+		margin: 28px;
+		width: 50px;
+		height: 58px;
+	}
+
 }
